@@ -2,7 +2,7 @@
 GENERAL
 ***************************************/
 
-/** {
+/* * {
     border: 1px solid red !important;
 }*/
 
@@ -32,8 +32,16 @@ html, body {
   flex-direction: column;*/
 }
 
+a {
+  text-decoration: none;
+}
+
 li {
   list-style: none;
+}
+
+img {
+  max-width: 100%;
 }
 
 /***************************************
@@ -65,18 +73,6 @@ nav li a:hover {
   transform: scale(1.15);
  }
 
-
-/***************************************
-FOOTER
-***************************************/
-
-footer {
-  text-align: center;
-  font-size: 0.85em;
-  clear: both;
-  margin: 40% 0% 0% 0%;
-}
-
 /***************************************
 PAGE ELEMENTS
 ***************************************/
@@ -99,10 +95,16 @@ h1 {
   font-size: 3.2em; /*'em' resizes font relative to a capital 'M' in the browser*/
 }
 
+h2 {
+  font-family: 'Sonsie One', cursive;
+  font-size: 1.5em;
+  text-align: center;
+}
+
 p {
   font-family: 'Crete Round', serif;
   width: 95%;
-  font-size: 1.4em;
+  font-size: 1.3em;
   line-height: 1.5em;
 }
 
@@ -110,42 +112,31 @@ p {
 GALLERY
 ***************************************/
 
-#gallery ul {
+#gallery {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 #gallery li {
   float: left; /*allows an element to be taken out of the normal flow and placed to the left or right of its container. Text and other inline elements will wrap around it*/
-  color: #bdc3c7;
-  height: 300px;
+  width: 45%;
+  margin: 2.5%;
 }
 
-h2 {
-  font-family: 'Sonsie One', cursive;
-  font-size: 1em;
-  text-align: center;
-  display: inline-block;
-  margin: 5px;
+#gallery li a p h2 {
+  margin: 0; /*paragraphs have margins by default, so adding '0' removes that*/
   padding: 5%;
+  color: #fff;
+  display: inline-block;
 }
 
 #gallery p {
-  margin: 0; /*paragraphs have margins by default, so adding '0' removes that*/
-  padding: 0%;
-  font-size: 1em;
-  color: #fff;
   text-align: center;
-  display: inline-block;
+  width: 100%;
 }
 
 img {
-	/*height: 300px;
-	position: absolute;
-	right: 25%;
-	top: 25%;
-	width: 300px;*/
-  max-width: 250px;
   border-radius: 50%;
   opacity: 0.6;
   display: block;
@@ -155,4 +146,15 @@ img {
 img:hover {
 	opacity: 1;
   transition: 0.4s ease;
+}
+
+/***************************************
+FOOTER
+***************************************/
+
+footer {
+  text-align: center;
+  font-size: 0.85em;
+  clear: both;
+  padding-top: 50px;
 }

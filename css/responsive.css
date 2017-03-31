@@ -19,6 +19,14 @@
   }
 }
 
+@media only screen and (min-width: 420px) {
+  #gallery li {
+    width: 45%; /*regardless of device, image will only ever take up 45% of the total width of the parent element*/
+    margin: 2.5%; /*here the 2.5% is filling the remaining 10% after two 45% images are used*/
+    border: 5%;
+  }
+}
+
 @media screen and (min-width: 660px) { /*this is the size for large tablets or regular size desktops*/
 
   #gallery li {
@@ -33,7 +41,7 @@
   }
 
   p {
-    font-size: 1.4em;
+    font-size: 1.3em;
     line-height: 1.5em;
   }
 }
